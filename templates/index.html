@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Start page</title>
+    <link th:rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.min.css}">
+    <link th:rel="stylesheet" type="text/css" th:href="styles.css">
+</head>
+<body>
+<h1 class="text-center" th:text="|Tabulation|"></h1>
+<form action="tabulate" method="post" class="text-center">
+    <label class = "mylabel" for="a" th:text="|A:|"></label>
+    <input type="text" id="a" name="a"><br/>
+    <label class = "mylabel" for="b" th:text="|B:|"></label>
+    <input type="text" id="b" name="b"><br/>
+    <label class = "mylabel" for="c" th:text="|C:|"></label>
+    <input type="text" id="c" name="c"><br/>
+    <label class = "mylabel" for="start" th:text="|Start:|"></label>
+    <input type="text" id="start" name="start"><br/>
+    <label class = "mylabel" for="end" th:text="|End:|"></label>
+    <input type="text" id="end" name="end"><br/>
+    <label class = "mylabel" for="step" th:text="|Step:|"></label>
+    <input type="text" id="step" name="step"><br/>
+    <button type="submit" th:text="|Tabulate|" class="btn btn-outline-primary my-btn"></button>
+</form>
+<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.min.js}"></script>
+</body>
+</html>

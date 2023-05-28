@@ -1,0 +1,14 @@
+body {
+    background-color: #ffffff;
+}
+
+h1 {
+    color: darkcyan;
+}
+.mylabel{
+    width: 40px;
+    height: 50px;
+}
+.my-btn{
+    width: 270px;
+}

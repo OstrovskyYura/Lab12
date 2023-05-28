@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link th:rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.min.css}">
+    <link th:rel="stylesheet" type="text/css" th:href="styles.css">
+</head>
+<body>
+<h1 class="text-center" th:text="|Tabulation results|"></h1>
+<table class="table table-sm table-striped">
+    <thead class="table-dark">
+    <tr>
+        <th class="text-center">X</th>
+        <th class="text-center">Y</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="p : ${points}">
+        <td class="text-center" th:text="${p.x()}"></td>
+        <td class="text-center" th:text="${p.y()}"></td>
+    </tr>
+    </tbody>
+</table>
+<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.min.js}"></script>
+</body>
+</html>
